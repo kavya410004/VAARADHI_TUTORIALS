@@ -23,6 +23,11 @@ hr{
     font-weight: 700;
     font-size: 1.7rem;
 }
+@media (max-width:500px) {
+    .navbar-brand{
+        font-size: 5vw;
+    }
+}
 
 .navbar-brand:hover{
     color: #f4f4f4;
@@ -32,6 +37,12 @@ hr{
     padding: 0 7%;
     background-image: linear-gradient(to left top, #0099ff, #32a4fb, #50aff6, #6bb9f1, #84c2ec);
 }
+@media (max-width:500px) {
+    .navbar{
+        padding: 0;
+    }
+}
+
 
 @media (min-width:992px) {
     .nav-item{
