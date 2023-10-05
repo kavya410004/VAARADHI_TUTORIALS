@@ -1,11 +1,13 @@
 /* HOME PAGE */
+html{
+    overflow-x: hidden;
+}
 body{
     background-color:#e8e8e8 ;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-
 .hr-1{
     width: 80%;
     text-align: center;
@@ -16,6 +18,7 @@ body{
         display: none;
     }
 }
+
 /* Nav bar */
 .navbar-brand{
     color: #fff;
@@ -28,11 +31,9 @@ body{
         font-size: 5vw;
     }
 }
-
 .navbar-brand:hover{
     color: #f4f4f4;
 }
-
 .navbar{
     padding: 0 7%;
     background-image: linear-gradient(to left top, #0099ff, #32a4fb, #50aff6, #6bb9f1, #84c2ec);
@@ -42,8 +43,6 @@ body{
         padding: 0;
     }
 }
-
-
 @media (min-width:992px) {
     .nav-item{
         font-size: 1.3rem;
@@ -56,7 +55,6 @@ body{
         padding: 5% 1% 7%;
 }
 }
-
 .img-container{
     width: 100%;
 }
@@ -69,7 +67,6 @@ body{
                -15px -15px 30px #bebebe;
     }
 }
-
 .quote-img{    
     width: 100%;
 }
@@ -78,7 +75,6 @@ body{
         border-radius: 30px;
     }
 }
-
 .color-container{
     font-family: Verdana, Tahoma, sans-serif;
     background-color:#e8e8e8 ;
@@ -103,7 +99,6 @@ body{
         margin-top: 5%;
     }
 }
-
 .medium-heading{
     margin-bottom: 2rem;
 }
@@ -112,8 +107,6 @@ body{
         font-size: 1rem;
     }
 }
-
-
 .exam-card {
     font-size: 1rem;
     margin-bottom: 50px;
@@ -127,7 +120,6 @@ body{
     cursor: pointer;
     transition: opacity 0.5s ease, transform 0.5s ease; 
 }
-
 @media(max-width: 576px){
     .exam-card{
         height: 130px;
@@ -145,21 +137,17 @@ body{
       transform: translateX(0);
     }
 }
-
 .exam-card.active{
     animation: fadeLeft 1s ease forwards;
 }
-
 .text-box{
     padding: 2%;
     color: #666;
     display: none;
 }
-
 .display{
     display: block;
 }
-
 .exam-icon{
     height: 130px;
     width: 130px;
@@ -170,7 +158,6 @@ body{
         width: 90px;
     }
 }
-
 .exam-card-title{
     font-weight: 600;
 }
@@ -179,7 +166,6 @@ body{
         font-size: 0.9rem;
     }
 }
-
 .exam-card-text{
     margin: 0;
 }
@@ -194,7 +180,6 @@ body{
         font-size: 2rem;
     }
 }
-
 #contact p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -204,14 +189,12 @@ body{
         font-size: 1rem;
     }
 }
-
 .contact-container{
     background-color: #f1f5f7;
     padding-top:0 ;
     padding-bottom:0 ;
     padding-right:0 ;
 }
-
 .contact-container-1{
     display: flex;
     flex-direction: column;
@@ -223,13 +206,11 @@ body{
         width: 100%;
     }
 }
-
 .contact-img{
     width: 50vw;
     border-top-left-radius: 20% 50%;
     border-bottom-left-radius: 20% 50%;
 }
-
 .contact-img-container{
     display: flex;
     justify-content: end;
@@ -242,7 +223,6 @@ body{
 .light-greyish-blue{
     background-color: #f1f5f7;
 }
-
 .button {
     position: relative;
     overflow: hidden;
@@ -262,7 +242,6 @@ body{
         padding: 0.5rem 1.7rem 0.5rem;
     }
 }
-
 .button:hover{
     background: linear-gradient(to left top, #0099ff, #32a4fb, #50aff6, #6bb9f1, #84c2ec);
 }
@@ -281,7 +260,6 @@ body{
 .icon{
     animation: pulse 1s infinite;
 }
-
 
 /* Footer section */
 footer {
@@ -324,8 +302,8 @@ footer p{
 .hr-2{
     margin: 1.75rem 0  1rem ;
 }
-/* FORM PAGE */
 
+/* FORM PAGE */
 center{
     padding-top:10% ;
     padding-bottom:10% ;
@@ -338,7 +316,6 @@ center{
 .form-page-body{
     background-color: #e8e8e8;  
 }              
-
 .form-box {
     max-width: 800px;
     background: #f1f7fe;
@@ -346,7 +323,6 @@ center{
     border-radius: 16px;
     color: #010101;
 }
-  
 .form {
     position: relative;
     display: flex;
@@ -377,13 +353,11 @@ center{
     width: 100%;
     padding: 5% 10%;
 }
-
 .input-container {
     position: relative;
     margin: 50px auto;
     width: 100%;
 }
-  
 .input-container input[type="text"] {
     font-size: 1.25rem;
     width: 100%;
@@ -393,7 +367,6 @@ center{
     background-color: transparent;
     outline: none;
 }
-  
 .input-container .label {
     position: absolute;
     top: 0;
@@ -402,14 +375,12 @@ center{
     transition: all 0.3s ease;
     pointer-events: none;
 }
-  
 .input-container input[type="text"]:focus ~ .label,
 .input-container input[type="text"]:valid ~ .label {
     top: -20px;
     font-size: 1rem;
     color: #333;
 }
-  
 .input-container .underline {
     position: absolute;
     bottom: 0;
@@ -420,12 +391,9 @@ center{
     transform: scaleX(0);
     transition: all 0.3s ease;
 }
-  
 .input-container input[type="text"]:focus ~ .underline {
     transform: scaleX(1);
 }
-  
 textarea{
     width: 100%;
 }
-

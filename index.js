@@ -16,6 +16,7 @@ if (screenWidth <= 1023) {
   })
 }
 
+// To check if element is in the screen
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
   return (
@@ -55,6 +56,7 @@ function displayInfo(el){
 }
 
 handleScroll();
+
 // calls handleScroll function when the site is scrolled
 window.addEventListener('scroll', handleScroll);
 
@@ -64,19 +66,11 @@ for (var i = 0; i < 4; i++){
   element.addEventListener('click',displayInfo);
 }
 
-
-
-// add click event to all .exam-card
-// Get all elements with class "exam-card"
+// Toggle display of the details in exam-card
 const examCards = document.querySelectorAll('.exam-card');
-
-// Add click event listeners to each "exam-card" element
 examCards.forEach((card) => {
     card.addEventListener('click', () => {
-        // Find the card-content element within the clicked "exam-card"
         const cardContent = card.querySelector('.text-box');
-
-        // Toggle the display of the card-content element
         if (cardContent.style.display === 'none' || cardContent.style.display === '') {
             cardContent.style.display = 'block';
             card.style.height = 'auto';
