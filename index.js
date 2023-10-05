@@ -2,10 +2,6 @@
 document.getElementById('email-button').addEventListener('click', function() {
     window.location.href = 'form.html'; 
 });
-// icons
-document.getElementById('whatsapp-icon').addEventListener('click', function() {
-  alert("Our Whatsapp Number: +919704882298")
-})
 
 // To know the screen size
 const screenWidth = window.innerWidth;
