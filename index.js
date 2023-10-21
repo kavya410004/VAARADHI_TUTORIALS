@@ -8,11 +8,11 @@ const screenWidth = window.innerWidth;
 
 if (screenWidth <= 1023) {
     document.getElementById('call-button').addEventListener('click', function() {
-    window.location.href = 'tel:+919704882298';
+    window.location.href = 'tel:+910000000000';
   })
 } else if (screenWidth >= 1024) {
     document.getElementById('call-button').addEventListener('click', function() {
-    alert("Our Mobile Number: +919704882298")
+    alert("Our Mobile Number: +910000000000")
   })
 }
 
